@@ -1,12 +1,12 @@
 app      = require 'app'
 main     = require './application'
-manifest = require '../../package.json'
+manifest = require '../package.json'
 path = require 'path'
 
 child_process = require 'child_process'
 getPort       = require 'get-port'
 
-process.on 'uncaughtException', (error) -> 
+process.on 'uncaughtException', (error) ->
   console.error error.stack
 
 do ->
@@ -25,4 +25,3 @@ do ->
       return
     return
   return
-  
