@@ -21,7 +21,7 @@ gulp.task('electron', function() {
         rebuild: false,
         packaging: false,
         asar: false,
-        platforms: ['darwin-x64', 'win32-ia32', 'win32-x64'],
+        platforms: ['darwin-x64', 'win32-ia32', 'linux-ia32', 'linux-x64'],
         platformResources: {
             darwin: {
                 CFBundleDisplayName: packageJson.name,
