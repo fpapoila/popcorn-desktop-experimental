@@ -1,6 +1,6 @@
 {
-  "name": "Angular-Popcorn-Time",
-  "version": "0.0.0",
+  "name": "Popcorn-Time-Experimental",
+  "version": "0.4.0",
   "description": "There's nothing on TV",
   "main": "build/scripts/main.js",
   "devDependencies": {
@@ -34,9 +34,6 @@
   },
   "dependencies": {
     "body-parser": "^1.13.3",
-    "electron-livereload": "0.0.2",
-    "electron-packager": "^5.1.0",
-    "electron-prebuilt": "0.36.1",
     "express": "^4.13.3",
     "fluent-ffmpeg": "^2.0.1",
     "get-port": "^1.0.0",
@@ -54,8 +51,7 @@
     "semver": "^5.0.1",
     "socket.io": "^1.3.6",
     "torrent-health": "0.0.6",
-    "torrent-stream": "1.0.0",
-    "wcjs-prebuilt": "^2.0.6"
+    "torrent-stream": "1.0.0"
   },
   "scripts": {
     "start": "electron build/server.js",
