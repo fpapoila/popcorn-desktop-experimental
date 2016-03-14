@@ -1,6 +1,6 @@
 
 
-# [Butter](https://github.com/popcorn-official/popcorn-desktop-experimental)
+# [Popcorn Time Angular Electron](https://github.com/popcorn-official/popcorn-desktop-experimental)
 [![Build Status](https://travis-ci.orgpopcorn-official/popcorn-desktop-experimental.svg?branch=master)](https://travis-ci.org/popcorn-official/popcorn-desktop-experimental) [![Dependency Status](https://david-dm.org/popcorn-official/popcorn-desktop-experimental.svg)](https://david-dm.org/popcorn-official/popcorn-desktop-experimental) [![devDependency Status](https://david-dm.org/popcorn-official/popcorn-desktop-experimental/dev-status.svg)](https://david-dm.org/popcorn-official/popcorn-desktop-experimental#info=devDependencies)
 
 Allow any computer user to watch movies easily streaming from torrents, without any particular knowledge.
