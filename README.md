@@ -1,61 +1,68 @@
-# [Popcorn Time](https://git.popcorntime.io/popcorntime/desktop/tree/master) [![Build Status](http://ci.popcorntime.io/job/Popcorn-Time/badge/icon)](http://ci.popcorntime.io/job/Popcorn-Time/)
+
+
+# [Butter](https://github.com/popcorn-official/popcorn-desktop-experimental)
+[![Build Status](https://travis-ci.orgpopcorn-official/popcorn-desktop-experimental.svg?branch=master)](https://travis-ci.org/popcorn-official/popcorn-desktop-experimental) [![Dependency Status](https://david-dm.org/popcorn-official/popcorn-desktop-experimental.svg)](https://david-dm.org/popcorn-official/popcorn-desktop-experimental) [![devDependency Status](https://david-dm.org/popcorn-official/popcorn-desktop-experimental/dev-status.svg)](https://david-dm.org/popcorn-official/popcorn-desktop-experimental#info=devDependencies)
 
 Allow any computer user to watch movies easily streaming from torrents, without any particular knowledge.
 
-![Popcorn Time](http://i.imgur.com/EoO0bc0.gif)
-
-Visit the project's website at <https://popcorntime.io>.
+Visit the project's website at <https://popcorntime.sh>.
 
 ***
 
+__WARNING__ : This project is in very early stage development and almost nothing works yet ! It will someday replace the current `butter-desktop` app based on others techs. This project is using __Electron__ + __Angular__ + __Coffee__. If you want to help and have any skills in one of these techs, please submit a PR and give Butter some love :-)
+
+***
+
+![Screenshot of Butter app](https://raw.githubusercontent.com/butterproject/butter-desktop-angular/master/screenshot.png)
+
 ## Getting Involved
 
-Want to report a bug, request a feature, contribute or translate Popcorn Time? Check out our in-depth guide to [Contributing to Popcorn Time](CONTRIBUTING.md). We need all the help we can get! You can also join in with our [community](README.md#community) to keep up-to-date and meet other Popcorn Timers.
+Want to report a bug, request a feature, contribute or translate Butter? Check out our in-depth guide to [Contributing to Butter](CONTRIBUTING.md#contributing-to-butter). We need all the help we can get! You can also join in with our [community](README.md#community) to keep up-to-date and meet other Butterrs.
 
 ## Getting Started
 
 If you're comfortable getting up and running from a `git clone`, this method is for you.
 
-If you clone the GitLab repository, you will need to build a number of assets using grunt.
+If you clone the GitHub repository, you will need to build a number of assets using grunt.
 
-The [master](https://git.popcorntime.io/popcorntime/desktop/tree/master) branch which contains the latest release.
+The [master](https://github.com/popcorn-official/popcorn-desktop-experimental) branch which contains the latest release.
 
-#### Quickstart:
+### Quickstart:
 
-1. `npm install -g grunt-cli bower`
-1. `npm install`
-1. `grunt build`
-1. `grunt start`
+Note that in Ubuntu (or derivative system) you probably need to upgrade `nodejs` and `npm` version. To do so, run the following :
 
-If you encounter trouble with the above method, you can try:
+1. `curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -`
+1. `sudo apt-get --yes install nodejs && sudo npm -g install npm`
 
-1. `npm install -g bower grunt-cli` (Linux: you may need to run with `sudo`)
-1. `cd desktop`
-1. `npm install`
-1. `bower install`
-1. `grunt lang`
-1. `grunt nodewebkit`
-1. `grunt css`
-1. `grunt start`
+Then you can start building Butter :
 
-Optionally, you may simply run `./make_popcorn.sh` if you are on a linux or mac based operating system.
+1. `npm install -g grunt-cli bower` (Linux: you **need** to run with `sudo`)
+1. `npm install ## Install local dependencies in node_modules/`
+1. `grunt build ## Build the Butter application`
+1. `npm install gulp gulp-electron gulp-util` ## Start the Butter application`
+1. `gulp` ## Start the Butter application`
+Optionally, you may simply run `./make_butter.sh` if you are on a linux or mac based operating system.
 
-Full instructions & troubleshooting tips can be found in the [Contributing Guide](CONTRIBUTING.md)
+You can also have a look at the [Dockerfile](Dockerfile) as a build example.
 
-<a name="community"></a>
+Full instructions & troubleshooting tips can be found in the [Contributing Guide](CONTRIBUTING.md#contributing-to-butter)
+
+### Generate executable packages
+
+You can generate executable packages for all platforms with `grunt package`. The packages are in `dist/`.
+
 ## Community
 
-Keep track of Popcorn Time development and community activity.
+Keep track of Butter development and community activity.
 
-* Follow Popcorn Time on [Twitter](https://twitter.com/popcorntimetv), [Facebook](https://www.facebook.com/PopcornTimeTv) and [Google+](https://plus.google.com/+Getpopcorntime).
-* Read and subscribe to the [The Official Popcorn Time Blog](https://blog.popcorntime.io).
-* Join in discussions on the [Popcorn Time Forum](https://discuss.popcorntime.io)
-* Connect with us on IRC at `#popcorntime` on freenode ([web access](http://webchat.freenode.net/?channels=popcorntime))
-
+* Follow Butter on [Twitter](https://twitter.com/popcorntimetv), [Facebook](https://www.facebook.com/ButterProjectOrg/) and [Google+](https://plus.google.com/communities/111003619134556931561).
+* Read and subscribe to [The Official Butter Blog](https://github.com/popcorn-official/blog).
+* Join in discussions on the [Butter Forum](https://discuss.butterproject.org)
+* Connect with us on IRC at `#butterproject` on freenode ([web access](http://webchat.freenode.net/?channels=butterproject))
 
 ## Versioning
 
-For transparency and insight into our release cycle, and for striving to maintain backward compatibility, Popcorn Time will be maintained according to the [Semantic Versioning](http://semver.org/) guidelines as much as possible.
+For transparency and insight into our release cycle, and for striving to maintain backward compatibility, Butter will be maintained according to the [Semantic Versioning](http://semver.org/) guidelines as much as possible.
 
 Releases will be numbered with the following format:
 
@@ -63,24 +70,24 @@ Releases will be numbered with the following format:
 
 Constructed with the following guidelines:
 
-* A new *major* release indicates a large change where backwards compatibility is broken.
-* A new *minor* release indicates a normal change that maintains backwards compatibility.
+* A new *major* release indicates a large change where backward compatibility is broken.
+* A new *minor* release indicates a normal change that maintains backward compatibility.
 * A new *patch* release indicates a bugfix or small change which does not affect compatibility.
 * A new *build* release indicates this is a pre-release of the version.
 
-
 ***
 
-If you distribute a copy or make a fork of the project, you have to credit this project as source.
-	
+## License
+
+If you distribute a copy or make a fork of the project, you have to credit this project as the source.
+
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
- 
+
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
- 
+
 You should have received a copy of the GNU General Public License along with this program.  If not, see http://www.gnu.org/licenses/ .
 
 ***
 
-If you want to contact us : [hello@popcorntime.io](mailto:hello@popcorntime.io)
- 
-Copyright (c) 2014 Popcorn Time Foundation - Released under the [GLV v3 license](LICENSE.txt).
+Copyright (c) 2016 Popcorn Time Project - Released under the
+[GPL v3 license](LICENSE.txt).
